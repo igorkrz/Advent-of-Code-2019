@@ -17,17 +17,17 @@ class Day1 {
         self.array = array
     }
     
-    func solutionPartOne() -> Int {
-        return array.map {$0 / 3 - 2}.reduce(0,+)
+    func solutionPartOne() {
+        print(array.map {$0 / 3 - 2}.reduce(0,+))
     }
 
-    func solutionPartTwo() -> Int {
+    func solutionPartTwo() {
         var sum = 0
         var newArray = array
         while newArray.filter({ $0 > 0 }).count > 1 {
             sum += newArray.map {$0 / 3 - 2}.filter {$0 > 0}.reduce(0,+)
             newArray = newArray.map {$0 / 3 - 2}
         }
-        return sum
+        print(sum)
     }
 }

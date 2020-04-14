@@ -19,7 +19,7 @@ class Day7 {
         self.array = array
     }
     
-    func solvePartOne() {
+    func solutionPartOne() {
         var max = 0
         var input = 0
         let day5 = Day5Intcode(array: array)

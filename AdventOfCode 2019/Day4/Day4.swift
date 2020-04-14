@@ -13,15 +13,15 @@ class Day4 {
     
     var passwordRange: ClosedRange<Int>
     
-    var passwords = [Int]()
-    
     var adjacentDictionary: Dictionary = [1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0]
     
     init(passwordRange: ClosedRange<Int>) {
         self.passwordRange = passwordRange
     }
     
-    func checkPassword() -> Int {
+    func solution() {
+        
+        var passwords = [Int]()
         
         // Check each possibility in password range
         
@@ -38,7 +38,7 @@ class Day4 {
                 passwords.append(possibility)
             }
         }
-        return passwords.count
+        print(passwords.count)
     }
     
     func neverDecrease(_ digits: [Int]) -> Bool {

@@ -164,8 +164,8 @@
 		F63DF8D12440132200C037B8 /* Day8 */ = {
 			isa = PBXGroup;
 			children = (
-				F63DF8D22440133600C037B8 /* Day8.swift */,
 				F63DF8D42440135400C037B8 /* input.txt */,
+				F63DF8D22440133600C037B8 /* Day8.swift */,
 			);
 			path = Day8;
 			sourceTree = "<group>";

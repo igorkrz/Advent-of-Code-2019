@@ -40,7 +40,7 @@ class Day2 {
         }
     }
     
-    func solutionPartTwo() -> Int {
+    func solutionPartTwo() {
         let output = 19690720
         var noun = 0
         var verb = 0
@@ -52,6 +52,6 @@ class Day2 {
                 noun = 0
             }
         }
-        return 100 * noun + verb
+        print(100 * noun + verb)
     }
 }

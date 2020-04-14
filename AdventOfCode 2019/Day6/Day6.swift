@@ -19,7 +19,7 @@ class Day6 {
         self.input = input
     }
     
-    func orbitsCount() -> Int {
+    func solutionPartOne() {
         
         // Append dictionary
         
@@ -51,17 +51,18 @@ class Day6 {
             total += findTotal(key)
         }
         
-        return total
+        print(total)
     }
     
-    func orbitalTransfer() -> Int {
+    func solutionPartTwo() {
         let path1 = path(from: "YOU", to: "COM")
         let path2 = path(from: "SAN", to: "COM")
 
         // Find first intersecting object
+        
         let intersection = path1.first { path2.contains($0) }!
 
-        return path1.firstIndex(of: intersection)! + path2.firstIndex(of: intersection)!
+        print(path1.firstIndex(of: intersection)! + path2.firstIndex(of: intersection)!)
     }
 
     func path(from: String, to: String) -> [String] {

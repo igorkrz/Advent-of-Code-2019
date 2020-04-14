@@ -26,7 +26,7 @@ class Day3 {
         case R = "R"
     }
     
-    func findIntersections() -> [[Int]] {
+    func solutionPartOne() -> [[Int]] {
         
         // For each wire and for each element in wire
         
@@ -39,6 +39,7 @@ class Day3 {
                 var newItem = lastItem
                 let direction = Direction(rawValue: array[wire][element].first!)
                 let count = Int(array[wire][element].dropFirst())!
+                
                 
                 // Add every point to shared array
                 
@@ -71,11 +72,11 @@ class Day3 {
         return Array(Set(firstWire).intersection(Set(secondWire)))
     }
     
-    func manhattanDistance(_ arrayCalculateDistance: [[Int]]) -> Int{
-        return arrayCalculateDistance.map({abs($0[0]) + abs($0[1])}).sorted()[1]
+    func manhattanDistance(_ arrayCalculateDistance: [[Int]]) {
+        print(arrayCalculateDistance.map({abs($0[0]) + abs($0[1])}).sorted()[1])
     }
     
-    func calculateSteps(_ calculateArray: [[Int]]) -> Int {
+    func solutionPartTwo(_ calculateArray: [[Int]]) {
         
         // Search indexes of intersection in expanded arrays and add them
         
@@ -92,6 +93,6 @@ class Day3 {
             }
             returnArray.append(steps)
         }
-        return returnArray.sorted()[1]
+        print(returnArray.sorted()[1])
     }
 }
