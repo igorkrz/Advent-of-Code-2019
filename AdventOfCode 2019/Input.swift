@@ -66,4 +66,12 @@ class Input {
         print("Split failed")
         return nil
     }
+    
+    func largeInput(_ path: String) -> String? {
+        
+        if let input = try? String(contentsOfFile: path, encoding: String.Encoding.utf8) {
+            return input
+        }
+        return nil
+    }
 }

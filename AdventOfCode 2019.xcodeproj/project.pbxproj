@@ -17,6 +17,7 @@
 		F63DF8B22432AFB000C037B8 /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DF8B12432AFAF00C037B8 /* Day6.swift */; };
 		F63DF8CD2433FE1100C037B8 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DF8CC2433FE1100C037B8 /* Day7.swift */; };
 		F63DF8D0243E5A8900C037B8 /* Day5Intcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DF8CF243E5A8800C037B8 /* Day5Intcode.swift */; };
+		F63DF8D32440133600C037B8 /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DF8D22440133600C037B8 /* Day8.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		F63DF8CC2433FE1100C037B8 /* Day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
 		F63DF8CE2433FFAE00C037B8 /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		F63DF8CF243E5A8800C037B8 /* Day5Intcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5Intcode.swift; sourceTree = "<group>"; };
+		F63DF8D22440133600C037B8 /* Day8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day8.swift; sourceTree = "<group>"; };
+		F63DF8D42440135400C037B8 /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F63DF897242C159800C037B8 /* Input.swift */,
+				F63DF8D12440132200C037B8 /* Day8 */,
 				F63DF8CB2433FE0000C037B8 /* Day7 */,
 				F63DF8B02432AF9900C037B8 /* Day6 */,
 				F63DF8AC24315B1000C037B8 /* Day5 */,
@@ -157,6 +161,15 @@
 			path = Day7;
 			sourceTree = "<group>";
 		};
+		F63DF8D12440132200C037B8 /* Day8 */ = {
+			isa = PBXGroup;
+			children = (
+				F63DF8D22440133600C037B8 /* Day8.swift */,
+				F63DF8D42440135400C037B8 /* input.txt */,
+			);
+			path = Day8;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,6 +233,7 @@
 				F63DF8AE24315B2300C037B8 /* Day5.swift in Sources */,
 				F63DF8AB242FDC1300C037B8 /* Day4.swift in Sources */,
 				F63DF8A2242C173F00C037B8 /* Day2.swift in Sources */,
+				F63DF8D32440133600C037B8 /* Day8.swift in Sources */,
 				F63DF8A1242C173300C037B8 /* Day1.swift in Sources */,
 				F63DF8D0243E5A8900C037B8 /* Day5Intcode.swift in Sources */,
 				F63DF8A4242C179B00C037B8 /* main.swift in Sources */,
